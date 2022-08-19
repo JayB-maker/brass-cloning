@@ -116,6 +116,7 @@ export interface ILinkProps {
   color?: string;
   bg?: string;
   center?: boolean;
+  lineheight?: string;
   size?: string;
   position?: string;
   heavy?: boolean;
@@ -134,7 +135,11 @@ export interface ILinkProps {
   margin?: string;
   padding?: string;
   flex?: boolean;
+  flexratio?: string;
+  flexdirection?: string;
+  gap?: string;
   hcolor?: string;
+  hbg?: string;
 
   mdwidth?: string;
   mdsize?: string;
@@ -200,7 +205,7 @@ export interface IInputProps {
     mobilelineHeight?: string;
     transform?: string;
     fontFamily?: string;
-    cursor?: boolean;
+    pointer?: boolean;
     weight?: string;
     width?:string;
     height?: string;
