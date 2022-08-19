@@ -154,25 +154,30 @@ export const Image = styled.img<IImageProps>`
 `;
 
 export const LinkText = styled(Link)<ILinkProps>`
-  font-size: ${(props) => (props.size ? `${props.size}` : "20px")};
+  font-size: ${(props) => (props.size ? `${props.size}` : "18px")};
   font-style: ${(props) => props.italics && "italics"};
   text-decoration: ${(props) => props.underline && "underline"};
   display: ${(props) => props.display && `${props.display}`}
-  font-weight: ${(props) => (props.heavy ? "600" : "400")};
+  font-weight: ${(props) => (props.heavy ? "700" : "500")};
   color: ${(props) => (props.color ? `${props.color}` : primaryColor)};
   background-color: ${(props) => (props.bg ? `${props.bg}` : "transparent")};
   border-radius: ${(props) => (props.radius ? `${props.radius}` : "0px")};
   width: ${(props) => props.width && `${props.width}`};
-  height: ${(props) => (props.height ? `${props.height}` : "unset")};
+  height: ${(props) => (props.height ? `${props.height}` : "fit-content")};
   text-align: ${(props) => (props.align ? `${props.align}` : "left")};
+  line-height: ${(props) => (props.lineheight && `${props.lineheight}`)};
   align-items: ${(props) =>
     props.alignitems ? `${props.alignitems}` : "unset"};
   padding: ${(props) => (props.padding ? `${props.padding}` : "0px")};
   margin: ${(props) => (props.margin ? `${props.margin}` : "0px")};
-  flex: ${(props) => (props.flex ? `${props.flex}` : "unset")};
+  flex: ${(props) => (props.flexratio ? `${props.flexratio}` : "unset")};
+  display: ${(props) => (props.flex && "flex")};
+  gap: ${(props) => (props.gap ? `${props.gap}` : "unset")};
+  flex-direction: ${(props) => (props.flexdirection ? `${props.flexdirection}` : "unset")};
 
   &:hover {
     color: ${(props) => props.hcolor && `${props.hcolor}`};
+    background: ${(props) => props.hbg && `${props.hbg}`};
   }
 
   @media screen and (max-width: 1024px) {
@@ -294,11 +299,11 @@ export const TextAreaField = styled("textarea")<IInputProps>`
 
 export const Text = styled.p<ITextProps>`
   font-size: ${(props) => (props.size ? `${props.size}` : "18px")};
-  font-weight: ${(props) => (props.heavy ? "700" : "500")};
+  font-weight: ${(props) => (props.heavy ? "700" : "400")};
   line-height: ${(props) => props.lineheight && `${props.lineheight}`};
   text-align: ${(props) => props.center && "center"};
   color: ${(props) => props.color && `${props.color}`};
-  cursor: ${(props) => props.cursor && "pointer"};
+  cursor: ${(props) => props.pointer && "pointer"};
   width: ${(props) => (props.width ? `${props.width}` : "unset")};
   height: ${(props) => (props.height ? `${props.height}` : "unset")};
   padding-top: ${(props) => (props.ptop ? `${props.ptop}` : "0px")};
@@ -309,8 +314,6 @@ export const Text = styled.p<ITextProps>`
   margin-right: ${(props) => (props.mright ? `${props.mright}` : "0px")};
   margin-bottom: ${(props) => (props.mbottom ? `${props.mbottom}` : "0px")};
   margin-left: ${(props) => (props.mleft ? `${props.mleft}` : "0px")};
-  // border: ${(props) => (props.size ? `${props.size}` : "1px")} solid
-  //   ${(props) => (props.border ? `${props.border}` : "#000000")};
   background-color: ${(props) => (props.bg ? `${props.bg}` : "transparent")};
   border-radius: ${(props) => (props.radius ? `${props.radius}` : "0px")};
   margin: ${(props) => (props.margin ? `${props.margin}` : "0px")};
@@ -335,11 +338,11 @@ export const Text = styled.p<ITextProps>`
 
 export const TitleText = styled.h3<ITextProps>`
   font-size: ${(props) => (props.size ? `${props.size}` : "20px")};
-  font-weight: ${(props) => (props.heavy ? "700" : "400")};
+  font-weight: ${(props) => (props.heavy ? "700" : "500")};
   text-align: ${(props) => props.center && "center"};
   line-height: ${(props) => props.lineheight && `${props.lineheight}`};
   color: ${(props) => props.color && `${props.color}`};
-  cursor: ${(props) => props.cursor && "pointer"};
+  cursor: ${(props) => props.pointer && "pointer"};
   width: ${(props) => (props.width ? `${props.width}` : "unset")};
   margin-top: ${(props) => (props.mtop ? `${props.mtop}` : "0px")};
   margin-right: ${(props) => (props.mright ? `${props.mright}` : "0px")};
