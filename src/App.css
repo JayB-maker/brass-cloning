@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Matter';
+    src: url('./fonts/Matter-Regular.ttf');
+}
+
+body{
+    font-family: 'Matter';
+    background: linear-gradient(90deg, );
+}
