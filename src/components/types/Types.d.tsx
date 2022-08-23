@@ -1,5 +1,6 @@
 export interface ICardProps {
   position?: string;
+  transition?: string;
   bg?: string;
   width?: string;
   color?: string;
@@ -48,7 +49,7 @@ export interface ICardProps {
   size?: string;
   flex?: boolean;
   flexratio?: string;
-  cursor?: string;
+  pointer?: boolean;
   hoverbg?: string;
   hovercolor?: string;
   bcontent?: string;
@@ -75,6 +76,17 @@ export interface ICardProps {
   mdsize?: string;
   mdlineheight?: string;
 
+  xmdflexdirection?: string;
+  xmdgridcolumn?: string;
+  xmdwidth?: string;
+  xmdheight?: string;
+  xmdmargin?: string;
+  xmdpadding?: string;
+  xmdgap?: string;
+  xmdradius?: string;
+  xmdalignitems?: string;
+  xmdjustifycontent?: string;
+
   smdisplay?: string;
   smflexdirection?: string;
   smgridcolumn?: string;
@@ -91,9 +103,11 @@ export interface ICardProps {
 export interface IImageProps {
   width?: string;
   height?: string;
+  radius?: string;
   margin?: string;
   ratio?: string;
   display?: string;
+  flexratio?: string;
   position?: string;
   top?: string;
   left?: string;
@@ -109,6 +123,7 @@ export interface IImageProps {
 }
 
 export interface ILinkProps {
+  index?: string;
   left?: string;
   right?: string;
   top?: string;
@@ -116,6 +131,7 @@ export interface ILinkProps {
   color?: string;
   bg?: string;
   center?: boolean;
+  weight?: string;
   lineheight?: string;
   size?: string;
   position?: string;
@@ -143,9 +159,13 @@ export interface ILinkProps {
 
   mdwidth?: string;
   mdsize?: string;
+  mdpadding?: string;
+  mddisplay?: string;
 
   smwidth?: string;
   smsize?: string;
+  smpadding?:string;
+  smdisplay?: string;
 }
 
 export interface IDividerProps {
@@ -221,6 +241,7 @@ export interface IInputProps {
     mdtextalign?: string;
     mdpadding?: string;
     mdlineheight?: string;
+    smpadding?:string;
     smsize?: string;
     smmargin?: string;
     smtextalign?: string;
