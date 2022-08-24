@@ -22,6 +22,7 @@ export const Card = styled("div")<ICardProps>`
   position: ${(props) => (props.position ? `${props.position}` : "unset")};
   background: ${(props) => (props.bg ? `${props.bg}` : "transparent")};
   color: ${(props) => props.color && `${props.color}`};
+  flex-wrap: ${(props) => props.wrap && "wrap"};
   width: ${(props) => (props.width ? `${props.width}` : "unset")};
   overflow: ${(props) => (props.overflow ? `${props.overflow}` : "unset")};
   max-width: ${(props) => (props.maxwidth ? `${props.maxwidth}` : "unset")};
@@ -73,7 +74,8 @@ export const Card = styled("div")<ICardProps>`
   font-size: ${(props) => (props.size ? `${props.size}` : "20px")};
   flex: ${(props) => (props.flexratio ? `${props.flexratio}` : "unset")};
   cursor: ${(props) => props.pointer && "pointer"};
-  transition: ${(props) => (props.transition ? `${props.transition}` : "unset")};
+  transition: ${(props) =>
+    props.transition ? `${props.transition}` : "unset"};
 
   &:hover {
     background-color: ${(props) => props.hoverbg && `${props.hoverbg}`};
@@ -103,10 +105,13 @@ export const Card = styled("div")<ICardProps>`
     display: ${(props) => props.mddisplay && `${props.mddisplay}`};
     grid-template-columns: ${(props) =>
       props.mdgridcolumn && `${props.mdgridcolumn}`};
+    flex-wrap: ${(props) => props.mdwrap && "wrap"};
     flex-direction: ${(props) =>
       props.mdflexdirection && `${props.mdflexdirection}`};
     width: ${(props) => props.mdwidth && `${props.mdwidth}`};
     height: ${(props) => props.mdheight && `${props.mdheight}`};
+    row-gap: ${(props) => props.mdrowgap && `${props.mdrowgap}`};
+    column-gap: ${(props) => props.mdcolumngap && `${props.mdcolumngap}`};
     gap: ${(props) => props.mdgap && `${props.mdgap}`};
     margin: ${(props) => props.mdmargin && `${props.mdmargin}`};
     padding: ${(props) => props.mdpadding && `${props.mdpadding}`};
@@ -114,12 +119,16 @@ export const Card = styled("div")<ICardProps>`
     align-items: ${(props) => props.mdalignitems && `${props.mdalignitems}`};
     justify-content: ${(props) =>
       props.mdjustifycontent && `${props.mdjustifycontent}`};
+    flex: ${(props) => props.mdflexratio && `${props.mdflexratio}`};
   }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: ${(props) =>
       props.xmdgridcolumn && `${props.xmdgridcolumn}`};
-      height: ${(props) => props.xmdheight && `${props.xmdheight}`};
+    flex-wrap: ${(props) => props.smwrap && "wrap"};
+    grid-template-columns: ${(props) =>
+      props.mdgridcolumn && `${props.mdgridcolumn}`};
+    height: ${(props) => props.xmdheight && `${props.xmdheight}`};
     flex-direction: ${(props) =>
       props.xmdflexdirection && `${props.xmdflexdirection}`};
     gap: ${(props) => props.xmdgap && `${props.xmdgap}`};
@@ -356,14 +365,16 @@ export const Text = styled.p<ITextProps>`
 
   @media screen and (max-width: 1024px) {
     font-size: ${(props) => props.mdsize && `${props.mdsize}`};
-    margin: ${(props) => (props.mdmargin && `${props.mdmargin}`)};
+    margin: ${(props) => props.mdmargin && `${props.mdmargin}`};
     padding: ${(props) => props.mdpadding && `${props.mdpadding}`};
     text-align: ${(props) => props.mdtextalign && `${props.mdtextalign}`};
     line-height: ${(props) => props.mdlineheight && `${props.mdlineheight}`};
   }
   @media screen and (max-width: 600px) {
     font-size: ${(props) => props.smsize && `${props.smsize}`};
-    margin: ${(props) => (props.smmargin && `${props.smmargin}`)};
+    margin: ${(props) => props.smmargin && `${props.smmargin}`};
+    text-align: ${(props) => props.smtextalign && props.smtextalign};
+    padding: ${(props) => props.smpadding && `${props.smpadding}`};
   }
 `;
 
@@ -371,6 +382,7 @@ export const TitleText = styled.h3<ITextProps>`
   font-size: ${(props) => (props.size ? `${props.size}` : "20px")};
   font-weight: ${(props) => (props.heavy ? "700" : "500")};
   font-weight: ${(props) => props.weight && `${props.weight}`};
+  text-align: ${(props) => props.textalign && props.textalign};
   text-align: ${(props) => props.center && "center"};
   line-height: ${(props) => props.lineheight && `${props.lineheight}`};
   color: ${(props) => props.color && `${props.color}`};
@@ -386,6 +398,7 @@ export const TitleText = styled.h3<ITextProps>`
   border-radius: ${(props) => (props.radius ? `${props.radius}` : "0px")};
   margin: ${(props) => (props.margin ? `${props.margin}` : "0px")};
   padding: ${(props) => props.padding && `${props.padding}`};
+  text-align: ${(props) => props.textalign && props.textalign};
 
   &:hover {
     color: ${(props) => props.hovercolor && `${props.hovercolor}`};
@@ -455,7 +468,7 @@ export const InnerSection = styled.div<ICardProps>`
 
 export const MainSection = styled("section")<ICardProps>`
   width: ${(props) => props.width && `${props.width}`};
-  display: ${(props) => props.display && `${props.display}`};
+  display: ${(props) => props.display && "block"};
   max-width: ${(props) => props.maxwidth && `${props.maxwidth}`};
   top: ${(props) => (props.top ? `${props.top}` : "unset")};
   left: ${(props) => (props.left ? `${props.left}` : "unset")};
@@ -471,6 +484,7 @@ export const MainSection = styled("section")<ICardProps>`
   padding-bottom: ${(props) => (props.pbottom ? `${props.pbottom}` : "0px")};
   padding-left: ${(props) => props.pleft && `${props.pleft}`};
   padding-right: ${(props) => props.pright && `${props.pright}`};
+  padding: ${(props) => props.padding && `${props.padding}`};
   background: ${(props) => props.bg && props.bg};
   //   height: 100%;
   height: ${(props) => props.height && props.height};
