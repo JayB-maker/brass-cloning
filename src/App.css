@@ -1,7 +1,23 @@
 @font-face {
     font-family: 'Matter';
-    src: url('./fonts/Matter-Regular.ttf');
+    src: url('./fonts/Matter-Medium.ttf');
 }
+/* @font-face {
+    font-family: 'Matter';
+    src: url('./fonts/Matter-Medium.ttf');
+}
+@font-face {
+    font-family: 'Matter';
+    src: url('./fonts/Matter-Light.ttf');
+}
+@font-face {
+    font-family: 'Matter';
+    src: url('./fonts/Matter-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Matter';
+    src: url('./fonts/Matter-Bold.ttf');
+} */
 
 body{
     font-family: 'Matter';
