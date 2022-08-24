@@ -87,3 +87,17 @@ export const TrusteesDetails = [{
   image: "assets/business-insider.png",
   path: "https://africa.businessinsider.com/local/markets/nigerian-fintech-brass-secures-dollar17mn-financing-round-to-power-expansion-into/74mwmjq",
 }, ]
+
+export const FinancialStacksDetails = [{
+  icon: "assets/speed.gif",
+  title: "Speed",
+  details: "Open a commercial-grade current account from anywhere in 10 minutes",
+}, {
+  icon: "assets/security.gif",
+  title: "Security",
+  details: "Rely on bank-grade security with all your monies fully insured by NDIC",
+}, {
+  icon: "assets/wave.gif",
+  title: "Support",
+  details: "Get access to a trusted support team and resources whenever you want",
+}, ]
