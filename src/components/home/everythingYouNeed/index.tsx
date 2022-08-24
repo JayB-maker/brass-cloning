@@ -1,13 +1,28 @@
-import { InnerSection, MainSection, TitleText } from '../../ui'
+import { Card, InnerSection, MainSection, TitleText } from "../../ui";
+import EverythingYouNeedSection from "./everythingYouNeedSection/EverythingYouNeedSection";
 
 const EverythingYouNeed = () => {
   return (
-    <MainSection padding='154px 0'>
+    <MainSection padding="154px 0">
       <InnerSection>
-        <TitleText size="45px" lineheight="58px" heavy></TitleText>
+        <Card flex>
+          <TitleText
+            flexratio="1"
+            size="45px"
+            lineheight="58px"
+            mdsize="30px"
+            mdlineheight="41px"
+            mdtextalign="center"
+            heavy
+          >
+            Everything you need, less of what you don't.
+          </TitleText>
+          <Card flexratio="1" mddisplay="none" />
+        </Card>
+        <EverythingYouNeedSection />
       </InnerSection>
     </MainSection>
-  )
-}
+  );
+};
 
-export default EverythingYouNeed
+export default EverythingYouNeed;
