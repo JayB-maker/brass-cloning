@@ -112,21 +112,24 @@ export const FinancialStacksDetails = [
   },
 ];
 
-export const EverythingYouNeedDetais = [
+export const EverythingYouNeedDetails = [
   {
     title: "Payments",
     details: "Create instant, scheduled and recurring payments easily",
     video: "assets/brass-vid-1.mp4",
+    content: "",
   },
   {
     title: "Invoice",
     details: "Send, receive, and reconcile invoices all on one platform",
     video: "assets/brass-vid-2.mp4",
+    content: "",
   },
   {
     title: "Cashflow Support",
     details: "Move your business forward with insight and financial resources",
     video: "assets/brass-vid-3.mp4",
+    content: "",
   },
   {
     title: "Cross-platform availability",
@@ -137,5 +140,30 @@ export const EverythingYouNeedDetais = [
     title: "Team Banking",
     details: "Work with your team to run your entire financial operations",
     video: "assets/brass-vid-5.mp4",
+    content: "",
+  },
+];
+
+export const TestimonialsDetails = [
+  {
+    testimony:
+      "“We have to move really fast with our portfolio companies and Brass has helped us validate a lot of ideas and turned them to businesses with the ease of creating sub-accounts.”",
+    witness: "Simi Adejumo, Hustler Capital",
+    logoSRC: "assets/hustler.png",
+    imageSRC: "assets/brass-test-1.png",
+  },
+  {
+    testimony:
+      "“The ease of opening an account completely won me over. The app is very easy to navigate and it’s obvious they have the best interests of SMEs at heart. I’m proud to call them my bank.”",
+    witness: "Olakunbi Adedipe, Odu Fashion",
+    logoSRC: "assets/adu.png",
+    imageSRC: "assets/brass-test-2.png",
+  },
+  {
+    testimony:
+      "“Brass, with the sub-accounts feature, makes it easy to segment our cash and in turn optimise it for targeted goals.”",
+    witness: "Feranmi Ajetunmobi, Ni-Fries",
+    logoSRC: "assets/nifries.png",
+    imageSRC: "assets/brass-test-3.png",
   },
 ];
