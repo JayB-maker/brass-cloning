@@ -32,6 +32,7 @@ export const Card = styled("div")<ICardProps>`
   border: ${(props) => (props.border ? `${props.border}` : "unset")};
   border-top: ${(props) => props.btop && `${props.btop}`};
   border-bottom: ${(props) => props.bbottom && `${props.bbottom}`};
+  border-left: ${(props) => props.bdleft && `${props.bdleft}`};
   padding: ${(props) => (props.padding ? `${props.padding}` : "0px")};
   margin: ${(props) => (props.margin ? `${props.margin}` : "0px")};
   // padding-top: ${(props) => (props.ptop ? `${props.ptop}` : "0px")};
@@ -86,7 +87,7 @@ export const Card = styled("div")<ICardProps>`
   }
 
   &::before {
-    content: ${(props) => (props.bcontent ? `${props.bcontent}` : "")};
+    content: ${(props) => props.bcontent && ""};
     position: ${(props) => (props.bposition ? `${props.bposition}` : "unset")};
     background-color: ${(props) =>
       props.bbg ? `${props.bbg}` : "transparent"};
@@ -99,6 +100,7 @@ export const Card = styled("div")<ICardProps>`
     align-items: ${(props) => props.balignitems && `${props.balignitems}`};
     justify-content: ${(props) =>
       props.bjustifycontent && `${props.bjustifycontent}`};
+    display: block;
   }
 
   @media screen and (max-width: 1024px) {
@@ -177,6 +179,32 @@ export const Image = styled.img<IImageProps>`
   @media screen and (max-width: 1024px) {
     width: ${(props) => props.mdwidth && `${props.mdwidth}`};
     margin: ${(props) => props.mdmargin && `${props.mdmargin}`};
+  }
+`;
+
+export const Video = styled.video<IImageProps>`
+  margin: ${(props) => props.margin && `${props.margin}`};
+  width: ${(props) => (props.width ? `${props.width}` : "unset")};
+  height: ${(props) => (props.height ? `${props.height}` : "unset")};
+  border-radius: ${(props) => (props.radius ? `${props.radius}` : "unset")};
+  aspect-ratio: ${(props) => props.ratio && "1"};
+  display: ${(props) => (props.display ? `${props.display}` : "block")};
+  position: ${(props) => (props.position ? `${props.position}` : "unset")};
+  top: ${(props) => (props.top ? `${props.top}` : "unset")};
+  left: ${(props) => (props.left ? `${props.left}` : "unset")};
+  right: ${(props) => (props.right ? `${props.right}` : "unset")};
+  bottom: ${(props) => (props.bottom ? `${props.bottom}` : "unset")};
+  transform: ${(props) => (props.transform ? `${props.transform}` : "unset")};
+  flex: ${(props) => (props.flexratio ? `${props.flexratio}` : "unset")};
+
+  @media screen and (max-width: 1024px) {
+    width: ${(props) => props.mdwidth && `${props.mdwidth}`};
+    height: ${(props) => (props.mdheight ? `${props.mdheight}` : "unset")};
+    margin: ${(props) => props.mdmargin && `${props.mdmargin}`};
+  }
+  @media screen and (max-width: 600px) {
+    width: ${(props) => props.smwidth && `${props.smwidth}`};
+    margin: ${(props) => props.smmargin && `${props.smmargin}`};
   }
 `;
 
@@ -357,7 +385,7 @@ export const Text = styled.p<ITextProps>`
   border-radius: ${(props) => (props.radius ? `${props.radius}` : "0px")};
   margin: ${(props) => (props.margin ? `${props.margin}` : "0px")};
   padding: ${(props) => (props.padding ? `${props.padding}` : "0px")};
-  // flex: ${(props) => (props.flex ? `${props.flex}` : "unset")};
+  flex: ${(props) => props.flexratio && `${props.flexratio}`};
 
   &:hover {
     color: ${(props) => props.hovercolor && `${props.hovercolor}`};
@@ -366,6 +394,7 @@ export const Text = styled.p<ITextProps>`
   @media screen and (max-width: 1024px) {
     font-size: ${(props) => props.mdsize && `${props.mdsize}`};
     margin: ${(props) => props.mdmargin && `${props.mdmargin}`};
+    width: ${(props) => props.mdwidth && `${props.mdwidth}`};
     padding: ${(props) => props.mdpadding && `${props.mdpadding}`};
     text-align: ${(props) => props.mdtextalign && `${props.mdtextalign}`};
     line-height: ${(props) => props.mdlineheight && `${props.mdlineheight}`};
@@ -373,6 +402,7 @@ export const Text = styled.p<ITextProps>`
   @media screen and (max-width: 600px) {
     font-size: ${(props) => props.smsize && `${props.smsize}`};
     margin: ${(props) => props.smmargin && `${props.smmargin}`};
+    width: ${(props) => props.smwidth && `${props.smwidth}`};
     text-align: ${(props) => props.smtextalign && props.smtextalign};
     padding: ${(props) => props.smpadding && `${props.smpadding}`};
   }
@@ -399,6 +429,7 @@ export const TitleText = styled.h3<ITextProps>`
   margin: ${(props) => (props.margin ? `${props.margin}` : "0px")};
   padding: ${(props) => props.padding && `${props.padding}`};
   text-align: ${(props) => props.textalign && props.textalign};
+  flex: ${(props) => props.flexratio && props.flexratio};
 
   &:hover {
     color: ${(props) => props.hovercolor && `${props.hovercolor}`};
@@ -408,6 +439,7 @@ export const TitleText = styled.h3<ITextProps>`
     font-size: ${(props) => props.mdsize && `${props.mdsize}`};
     line-height: ${(props) => props.mdlineheight && `${props.mdlineheight}`};
     margin: ${(props) => props.mdmargin && `${props.mdmargin}`};
+    width: ${(props) => props.mdwidth && `${props.mdwidth}`};
     padding: ${(props) => props.mdpadding && `${props.mdpadding}`};
     text-align: ${(props) => props.mdtextalign && props.mdtextalign};
   }
@@ -415,6 +447,7 @@ export const TitleText = styled.h3<ITextProps>`
     font-size: ${(props) => props.smsize && `${props.smsize}`};
     line-height: ${(props) => props.smlineheight && `${props.smlineheight}`};
     margin: ${(props) => props.smmargin && `${props.smmargin}`};
+    width: ${(props) => props.smwidth && `${props.smwidth}`};
     text-align: ${(props) => props.smtextalign && props.smtextalign};
     padding: ${(props) => props.smpadding && `${props.smpadding}`};
   }
@@ -503,10 +536,12 @@ export const MainSection = styled("section")<ICardProps>`
   @media screen and (max-width: 1024px) {
     display: ${(props) => props.mddisplay && `${props.mddisplay}`};
     margin: ${(props) => props.mdmargin && `${props.mdmargin}`};
+    padding: ${(props) => props.mdpadding && `${props.mdpadding}`};
   }
   @media screen and (max-width: 600px) {
     display: ${(props) => props.smdisplay && `${props.smdisplay}`};
     margin: ${(props) => props.smmargin && `${props.smmargin}`};
+    padding: ${(props) => props.smpadding && `${props.smpadding}`};
   }
 `;
 
