@@ -3,7 +3,7 @@ import EverythingYouNeedSection from "./everythingYouNeedSection/EverythingYouNe
 
 const EverythingYouNeed = () => {
   return (
-    <MainSection padding="154px 0">
+    <MainSection padding="100px 0" smpadding="30px 0">
       <InnerSection>
         <Card flex>
           <TitleText
