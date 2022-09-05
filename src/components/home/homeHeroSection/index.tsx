@@ -10,9 +10,9 @@ const HomeHeroSection = () => {
           <Card
             flex
             alignitems="center"
-            height="100vh"
+            // height="100vh"
             mdheight="unset"
-            padding="60px 0 60px"
+            padding="60px 0 100px"
             mdpadding="20px 0 60px"
             gap="50px"
             smgap="40px"
