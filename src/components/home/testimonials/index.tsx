@@ -16,8 +16,8 @@ const Testimonials = () => {
           <TitleText
             width="475px"
             mdwidth="100%"
-            // smwidth="100%"
             size="45px"
+            heavy
             textalign="center"
             lineheight="58px"
             mdsize="30px"
