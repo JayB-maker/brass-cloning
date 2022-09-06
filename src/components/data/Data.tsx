@@ -167,3 +167,34 @@ export const TestimonialsDetails = [
     imageSRC: "assets/brass-test-3.png",
   },
 ];
+
+export const IntegrationDetails = [
+  {
+    iconSRC: "assets/slack.png",
+    tools: "Slack",
+    backgroundColor: "#3F0E40",
+    details:
+      "Add Brass to your company’s slack to receive real-time notifications, send team mate invitations, and generate account statements.",
+  },
+  {
+    iconSRC: "assets/quickbooks.png",
+    tools: "QuickBooks",
+    backgroundColor: "#2CA01C",
+    details:
+      "Manage your business finance by sync your invoices and payments with quickbooks.",
+  },
+  {
+    iconSRC: "assets/sage.png",
+    tools: "Sage",
+    backgroundColor: "#00DC00",
+    details:
+      "Manage your business cashflow, invoices and activities by sync your account with sage.",
+  },
+  {
+    iconSRC: "assets/zappier.png",
+    tools: "Zappier",
+    backgroundColor: "#FF4A00",
+    details:
+      "Connect your Brass account to the thousands of apps on the zapier platform.",
+  },
+];
