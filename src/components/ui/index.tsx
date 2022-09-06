@@ -418,6 +418,7 @@ export const TitleText = styled.h3<ITextProps>`
   color: ${(props) => props.color && `${props.color}`};
   cursor: ${(props) => props.pointer && "pointer"};
   width: ${(props) => (props.width ? `${props.width}` : "unset")};
+  height: ${(props) => (props.height ? `${props.height}` : "unset")};
   margin-top: ${(props) => (props.mtop ? `${props.mtop}` : "0px")};
   margin-right: ${(props) => (props.mright ? `${props.mright}` : "0px")};
   margin-bottom: ${(props) => (props.mbottom ? `${props.mbottom}` : "0px")};
@@ -440,6 +441,7 @@ export const TitleText = styled.h3<ITextProps>`
     line-height: ${(props) => props.mdlineheight && `${props.mdlineheight}`};
     margin: ${(props) => props.mdmargin && `${props.mdmargin}`};
     width: ${(props) => props.mdwidth && `${props.mdwidth}`};
+    height: ${(props) => props.mdheight && `${props.mdheight}`};
     padding: ${(props) => props.mdpadding && `${props.mdpadding}`};
     text-align: ${(props) => props.mdtextalign && props.mdtextalign};
   }
@@ -448,6 +450,7 @@ export const TitleText = styled.h3<ITextProps>`
     line-height: ${(props) => props.smlineheight && `${props.smlineheight}`};
     margin: ${(props) => props.smmargin && `${props.smmargin}`};
     width: ${(props) => props.smwidth && `${props.smwidth}`};
+    height: ${(props) => props.smheight && `${props.smheight}`};
     text-align: ${(props) => props.smtextalign && props.smtextalign};
     padding: ${(props) => props.smpadding && `${props.smpadding}`};
   }
