@@ -11,6 +11,8 @@ import {
 } from "../../../../ui";
 
 const LeftSection = () => {
+  const { clicked, setClicked } = useContext(TestimonialsContext);
+
   const handleClicked = () => {
     const newIndex =
       clicked === TestimonialsDetails.length - 1 ? 0 : clicked + 1;
@@ -22,11 +24,10 @@ const LeftSection = () => {
     return () => clearTimeout(timer);
   };
 
-  const { clicked, setClicked } = useContext(TestimonialsContext);
-
   useEffect(() => {
     handleClicked();
   }, [clicked]);
+
   return (
     <>
       <Card flexratio="1" flex flexdirection="column" alignitems="center">
@@ -80,7 +81,7 @@ const LeftSection = () => {
         </Card>
         <Card margin="50px 0 0" smmargin="48px 0">
           {TestimonialsDetails.map((item, index) => (
-            <Card flex justifycontent="center">
+            <Card flex justifycontent="center" key={index}>
               {clicked === index && <Image src={item.logoSRC} width="50%" />}
             </Card>
           ))}
