@@ -2,6 +2,7 @@ export interface ICardProps {
   position?: string;
   transition?: string;
   bg?: string;
+  bdleft?:string;
   width?: string;
   color?: string;
   overflow?: string;
@@ -53,7 +54,7 @@ export interface ICardProps {
   pointer?: boolean;
   hoverbg?: string;
   hovercolor?: string;
-  bcontent?: string;
+  bcontent?: boolean;
   bposition?: string;
   bbg?: string;
   bwidth?: string;
@@ -240,7 +241,7 @@ export interface ITextProps {
   margin?: string;
   padding?: string;
   radius?: string;
-  flex?: string;
+  flexratio?: string;
   hovercolor?: string;
 
   mdsize?: string;
@@ -248,6 +249,10 @@ export interface ITextProps {
   mdtextalign?: string;
   mdpadding?: string;
   mdlineheight?: string;
+  mdwidth?: string;
+  mdheight?: string;
+  smheight?: string;
+  smwidth?: string;
   smpadding?: string;
   smsize?: string;
   smmargin?: string;
