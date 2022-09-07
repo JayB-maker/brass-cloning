@@ -198,3 +198,20 @@ export const IntegrationDetails = [
       "Connect your Brass account to the thousands of apps on the zapier platform.",
   },
 ];
+
+export const GetStartedDetails =  [{
+  imageSRC: "assets/naira.png",
+  heading: "Why you need a separate business c...",
+  details: "The reason for them and how to open a Brass",
+  path: "/",
+}, {
+  imageSRC: "assets/idea.png",
+  heading: "Working on the right idea",
+  details: "How to figure out the right business idea for yo",
+  path: "/",
+}, {
+  imageSRC: "assets/business-credit.jpg",
+  heading: "What you need to know about busin...",
+  details: "How business credit can work for you.",
+  path: "/",
+},]
