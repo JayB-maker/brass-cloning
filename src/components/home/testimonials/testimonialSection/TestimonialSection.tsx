@@ -9,7 +9,7 @@ const TestimonialSection = () => {
   return (
     <>
       <TestimonialsContext.Provider value={{ clicked, setClicked }}>
-        <Card flex maxwidth="1440px" smflexdirection="column-reverse" margin="50px 0 0" width="100%" bg="black">
+        <Card flex maxwidth="1440px" smflexdirection="column-reverse" margin="50px 0 0" width="100%" height="704px" smheight="unset" bg="black">
           <LeftSection />
           <RightSection />
         </Card>
