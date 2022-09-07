@@ -8,7 +8,7 @@ const IntegrationCards = (props: any) => {
         width="292px"
         height="325px"
         padding="56px 28px"
-        border="1px solid #8F96A3"
+        border="1px solid #E9EBEC"
         radius="8px"
       >
         <Card
