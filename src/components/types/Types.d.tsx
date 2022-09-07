@@ -4,6 +4,7 @@ export interface ICardProps {
   bg?: string;
   bdleft?:string;
   width?: string;
+  columngap?: string;
   color?: string;
   overflow?: string;
   maxwidth?: string;
@@ -121,12 +122,15 @@ export interface IImageProps {
   right?: string;
   bottom?: string;
   transform?: string;
+  cover?: boolean;
   mdwidth?: string;
   mdmargin?: string;
+  mdcover?: boolean;
   mdheight?: string;
   smwidth?: string;
   smmargin?: string;
   smheight?: string;
+  smcover?: string;
 }
 
 export interface ILinkProps {
