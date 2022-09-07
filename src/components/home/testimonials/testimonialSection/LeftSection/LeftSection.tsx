@@ -38,13 +38,15 @@ const LeftSection = () => {
             flexdirection="column"
             gap="100px"
             smgap="30px"
-            padding="0 100px"
+            padding="0 70px"
+            mdpadding="0 16px"
             smpadding="0 16px"
           >
             {clicked === index && (
               <>
                 <TitleText
                   width="468px"
+                  mdwidth="100%"
                   smwidth="100%"
                   height="250px"
                   smheight="150px"
@@ -79,7 +81,7 @@ const LeftSection = () => {
             />
           ))}
         </Card>
-        <Card margin="50px 0 0" smmargin="48px 0">
+        <Card margin="50px 0" smmargin="48px 0">
           {TestimonialsDetails.map((item, index) => (
             <Card flex justifycontent="center" key={index}>
               {clicked === index && <Image src={item.logoSRC} width="50%" />}
