@@ -170,15 +170,19 @@ export const Image = styled.img<IImageProps>`
   bottom: ${(props) => (props.bottom ? `${props.bottom}` : "unset")};
   transform: ${(props) => (props.transform ? `${props.transform}` : "unset")};
   flex: ${(props) => (props.flexratio ? `${props.flexratio}` : "unset")};
+  object-fit: ${(props) => props.cover && "cover"};
 
   @media screen and (max-width: 1024px) {
     width: ${(props) => props.mdwidth && `${props.mdwidth}`};
-    height: ${(props) => (props.mdheight ? `${props.mdheight}` : "unset")};
+    height: ${(props) => (props.mdheight && `${props.mdheight}`)};
     margin: ${(props) => props.mdmargin && `${props.mdmargin}`};
+    object-fit: ${(props) => props.mdcover && "cover"};
   }
-  @media screen and (max-width: 1024px) {
-    width: ${(props) => props.mdwidth && `${props.mdwidth}`};
-    margin: ${(props) => props.mdmargin && `${props.mdmargin}`};
+  @media screen and (max-width: 600px) {
+    width: ${(props) => props.smwidth && `${props.smwidth}`};
+    height: ${(props) => props.smheight && `${props.smheight}`};
+    margin: ${(props) => props.smmargin && `${props.smmargin}`};
+    object-fit: ${(props) => props.smcover && `${props.smcover}`};
   }
 `;
 
