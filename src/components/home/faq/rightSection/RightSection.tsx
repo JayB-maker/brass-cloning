@@ -2,12 +2,8 @@ import { useState } from 'react'
 import { FAQDetails } from '../../../data/Data'
 import { Card, grayColor, TitleText, whiteColor } from '../../../ui'
 
-interface IClicked {
-    isClicked?: any;
-}
-
 const RightSection = () => {
-    const [isClicked, setIsClicked] = useState<IClicked>({isClicked: 0});
+    const [isClicked, setIsClicked] = useState(0);
 
     const handleClicked = (index:any) => {
         if (isClicked === index) {
