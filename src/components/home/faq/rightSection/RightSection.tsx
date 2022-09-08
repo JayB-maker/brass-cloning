@@ -11,7 +11,7 @@ const RightSection = () => {
 
     const handleClicked = (index:any) => {
         if (isClicked === index) {
-            setIsClicked(null);
+            setIsClicked(0);
         }
         setIsClicked(index);
     } 
