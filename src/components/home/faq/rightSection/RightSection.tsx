@@ -3,7 +3,9 @@ import { Card } from '../../../ui'
 
 const RightSection = () => {
   return (
-    <Card flexratio='1'></Card>
+    <Card flexratio='1'>
+        
+    </Card>
   )
 }
 
