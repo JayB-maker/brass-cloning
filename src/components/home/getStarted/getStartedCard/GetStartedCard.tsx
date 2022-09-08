@@ -14,9 +14,9 @@ const GetStartedCard = () => {
         margin="50px 0 0"
       >
         {GetStartedDetails.map((item, index) => (
-          <LinkText to={item.path}>
+          <LinkText to={item.path} key={index}>
             <Card
-            key={index}
+            
             border="1px solid #E9EBEC"
             radius="8px"
             overflow="hidden"
