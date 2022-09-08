@@ -199,19 +199,45 @@ export const IntegrationDetails = [
   },
 ];
 
-export const GetStartedDetails =  [{
-  imageSRC: "assets/naira.png",
-  heading: "Why you need a separate business c...",
-  details: "The reason for them and how to open a Brass",
-  path: "/",
-}, {
-  imageSRC: "assets/idea.png",
-  heading: "Working on the right idea",
-  details: "How to figure out the right business idea for yo",
-  path: "/",
-}, {
-  imageSRC: "assets/business-credit.jpg",
-  heading: "What you need to know about busin...",
-  details: "How business credit can work for you.",
-  path: "/",
-},]
+export const GetStartedDetails = [
+  {
+    imageSRC: "assets/naira.png",
+    heading: "Why you need a separate business c...",
+    details: "The reason for them and how to open a Brass",
+    path: "/",
+  },
+  {
+    imageSRC: "assets/idea.png",
+    heading: "Working on the right idea",
+    details: "How to figure out the right business idea for yo",
+    path: "/",
+  },
+  {
+    imageSRC: "assets/business-credit.jpg",
+    heading: "What you need to know about busin...",
+    details: "How business credit can work for you.",
+    path: "/",
+  },
+];
+
+export const FAQDetails = [
+  {
+    question: "Who can sign up on Brass?",
+    answer:
+      "We currently only serve registered businesses in Nigeria. We support sole traders, NGOs, partnerships and limited liability companies. However, If your business is not yet registered, Brass can help you get your desired business registered on time with our partners.",
+  },
+  {
+    question: "How much do I pay to sign up at Brass?",
+    answer: "You do not pay for signing up for an account at Brass",
+  },
+  {
+    question: "What do I need to open an account?",
+    answer:
+      "You will need government-issued IDs (Including BVN) and your company's incorporation documents.",
+  },
+  {
+    question: "How do you ensure safekeeping of my data and money?",
+    answer:
+      "We have introduced Two factor Authentication(2FA) for an extra level of security. This authentication is done using digital OTP apps like Google authenticator and Authy instead of hackable channels such as the SMS.",
+  },
+];
