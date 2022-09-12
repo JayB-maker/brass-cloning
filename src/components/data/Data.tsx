@@ -290,4 +290,21 @@ export const FooterDetails = [
       },
     ],
   },
+  {
+    heading: "Support",
+    details: [
+      {
+        handle: "Blog",
+        path: "/",
+      },
+      {
+        handle: "Guides",
+        path: "/",
+      },
+      {
+        handle: "Help",
+        path: "/",
+      },
+    ],
+  },
 ];
