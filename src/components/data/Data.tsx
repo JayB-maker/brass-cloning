@@ -241,3 +241,19 @@ export const FAQDetails = [
       "We have introduced Two factor Authentication(2FA) for an extra level of security. This authentication is done using digital OTP apps like Google authenticator and Authy instead of hackable channels such as the SMS.",
   },
 ];
+
+export const FooterDetails = [
+  {
+    heading: "Industry",
+    details: [
+      {
+        handle: "Retail Businesses",
+        path: "/",
+      },
+      {
+        handle: "Internet Companies",
+        path: "/",
+      },
+    ],
+  },
+];
