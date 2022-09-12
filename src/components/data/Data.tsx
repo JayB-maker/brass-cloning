@@ -265,4 +265,29 @@ export const FooterDetails = [
       },
     ],
   },
+  {
+    heading: "About",
+    details: [
+      {
+        handle: "Customers",
+        path: "/",
+      },
+      {
+        handle: "Company",
+        path: "/",
+      },
+      {
+        handle: "Why Brass",
+        path: "/",
+      },
+      {
+        handle: "Press Resources",
+        path: "/",
+      },
+      {
+        handle: "Careers",
+        path: "/",
+      },
+    ],
+  },
 ];
