@@ -324,4 +324,46 @@ export const FooterDetails = [
       },
     ],
   },
+  {
+    heading: "Follow",
+    details: [
+      {
+        handle: "Twitter",
+        path: "/",
+      },
+      {
+        handle: "Linkedin",
+        path: "/",
+      },
+      {
+        handle: "Instagram",
+        path: "/",
+      },
+      {
+        handle: "Youtube",
+        path: "/",
+      },
+    ],
+  },
+  {
+    heading: "Contact",
+    details: [
+      {
+        handle: "01-700-2000",
+        path: "/",
+      },
+      {
+        handle: "sales@trybrass.com",
+        path: "/",
+      },
+      {
+        handle: "help@trybrass.com",
+        path: "/",
+      },
+      {
+        handle: "business@trybrass.com",
+        path: "/",
+      },
+    ],
+  },
 ];
