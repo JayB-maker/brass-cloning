@@ -307,4 +307,21 @@ export const FooterDetails = [
       },
     ],
   },
+  {
+    heading: "Legal",
+    details: [
+      {
+        handle: "Terms of Service",
+        path: "/",
+      },
+      {
+        handle: "Privacy Policy",
+        path: "/",
+      },
+      {
+        handle: "Capital TOS",
+        path: "/",
+      },
+    ],
+  },
 ];
