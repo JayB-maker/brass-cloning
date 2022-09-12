@@ -256,4 +256,13 @@ export const FooterDetails = [
       },
     ],
   },
+  {
+    heading: "Product",
+    details: [
+      {
+        handle: "Brass Capital",
+        path: "/",
+      },
+    ],
+  },
 ];
