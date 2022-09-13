@@ -244,7 +244,8 @@ export const FAQDetails = [
 
 export const FooterDetails = [
   {
-    heading: "Industry",
+    id: "id1",
+     heading: "Industry",
     details: [
       {
         handle: "Retail Businesses",
@@ -257,7 +258,8 @@ export const FooterDetails = [
     ],
   },
   {
-    heading: "Product",
+    id: "id2",
+     heading: "Product",
     details: [
       {
         handle: "Brass Capital",
@@ -266,7 +268,8 @@ export const FooterDetails = [
     ],
   },
   {
-    heading: "About",
+    id: "id3",
+     heading: "About",
     details: [
       {
         handle: "Customers",
@@ -291,7 +294,8 @@ export const FooterDetails = [
     ],
   },
   {
-    heading: "Support",
+    id: "id4",
+     heading: "Support",
     details: [
       {
         handle: "Blog",
@@ -308,7 +312,8 @@ export const FooterDetails = [
     ],
   },
   {
-    heading: "Legal",
+    id: "id5",
+     heading: "Legal",
     details: [
       {
         handle: "Terms of Service",
@@ -325,7 +330,8 @@ export const FooterDetails = [
     ],
   },
   {
-    heading: "Follow",
+    id: "id6",
+     heading: "Follow",
     details: [
       {
         handle: "Twitter",
@@ -346,7 +352,8 @@ export const FooterDetails = [
     ],
   },
   {
-    heading: "Contact",
+    id: "id7",
+     heading: "Contact",
     details: [
       {
         handle: "01-700-2000",
