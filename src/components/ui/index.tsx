@@ -245,6 +245,7 @@ export const LinkText = styled(Link)<ILinkProps>`
   &:hover {
     color: ${(props) => props.hcolor && `${props.hcolor}`};
     background: ${(props) => props.hbg && `${props.hbg}`};
+    text-decoration: ${(props) => props.hdecoration && `${props.hdecoration}`};
   }
 
   @media screen and (max-width: 1024px) {
