@@ -167,6 +167,7 @@ export interface ILinkProps {
   gap?: string;
   hcolor?: string;
   hbg?: string;
+  hdecoration?: string;
 
   mdwidth?: string;
   mdsize?: string;
