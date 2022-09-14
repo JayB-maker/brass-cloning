@@ -2,7 +2,7 @@ export interface ICardProps {
   position?: string;
   transition?: string;
   bg?: string;
-  bdleft?:string;
+  bdleft?: string;
   width?: string;
   columngap?: string;
   color?: string;
@@ -71,7 +71,7 @@ export interface ICardProps {
   mdwidth?: string;
   mdheight?: string;
   mdmargin?: string;
-  mdwrap?:boolean;
+  mdwrap?: boolean;
   mdpadding?: string;
   mdgap?: string;
   mdradius?: string;
