@@ -11,6 +11,8 @@ const Footer = () => {
           flexdirection="column"
           width="100%"
           gap="172px"
+          mdgap='100px'
+          smgap='50px'
         >
           <MainFooter />
           <BigStartSmall />
