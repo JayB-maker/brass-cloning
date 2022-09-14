@@ -5,12 +5,12 @@ import { Card, LinkText, TitleText, whiteColor } from "../../../ui";
 const MainFooter = () => {
   const [dropDown, setDropDown] = useState(null);
 
-  const handleClicked = (index:any) => {
-    if(dropDown === index){
-        setDropDown(null);
+  const handleClicked = (index: any) => {
+    if (dropDown === index) {
+      setDropDown(null);
     }
     setDropDown(index);
-  }
+  };
   return (
     <Card
       color={whiteColor}
@@ -40,20 +40,43 @@ const MainFooter = () => {
             <Card display="none" smdisplay="unset">
               <i
                 className={
-                  dropDown === item.id ? "fa-solid fa-angle-up" : "fa-solid fa-angle-down"
+                  dropDown === item.id
+                    ? "fa-solid fa-angle-up"
+                    : "fa-solid fa-angle-down"
                 }
                 style={{ color: "#50555" }}
               />
             </Card>
           </Card>
-          {item.details.map((subitem, index) => (
-            <>
+          {item.details.map((subitem) => (
+            <Card
+              key={subitem.handle}
+              flex
+              flexdirection="column"
+              gap="20px"
+              smdisplay="none"
+            >
+              <LinkText
+                width="fit-content"
+                size="15px"
+                lineheight="20px"
+                color={whiteColor}
+                hdecoration="underline"
+                to={subitem.path}
+              >
+                {subitem.handle}
+              </LinkText>
+            </Card>
+          ))}
+
+          {dropDown === item.id &&
+            item.details.map((subitem) => (
               <Card
-                key={index}
-                flex
+                key={subitem.handle}
+                display="none"
                 flexdirection="column"
                 gap="20px"
-                smdisplay="none"
+                smdisplay="flex"
               >
                 <LinkText
                   width="fit-content"
@@ -66,28 +89,7 @@ const MainFooter = () => {
                   {subitem.handle}
                 </LinkText>
               </Card>
-              {dropDown === item.id && (
-                <Card
-                  key={index}
-                  display="none"
-                  flexdirection="column"
-                  gap="20px"
-                  smdisplay="flex"
-                >
-                  <LinkText
-                    width="fit-content"
-                    size="15px"
-                    lineheight="20px"
-                    color={whiteColor}
-                    hdecoration="underline"
-                    to={subitem.path}
-                  >
-                    {subitem.handle}
-                  </LinkText>
-                </Card>
-              )}
-            </>
-          ))}
+            ))}
         </Card>
       ))}
     </Card>
