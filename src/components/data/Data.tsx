@@ -245,15 +245,15 @@ export const FAQDetails = [
 export const FooterDetails = [
   {
     id: "id1",
-     heading: "Industry",
+    heading: "Industry",
     details: [
       {
-        id:"",
+        id: "",
         handle: "Retail Businesses",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "Internet Companies",
         path: "/",
       },
@@ -261,10 +261,10 @@ export const FooterDetails = [
   },
   {
     id: "id2",
-     heading: "Product",
+    heading: "Product",
     details: [
       {
-        id:"",
+        id: "",
         handle: "Brass Capital",
         path: "/",
       },
@@ -272,30 +272,30 @@ export const FooterDetails = [
   },
   {
     id: "id3",
-     heading: "About",
+    heading: "About",
     details: [
       {
-        id:"",
+        id: "",
         handle: "Customers",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "Company",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "Why Brass",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "Press Resources",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "Careers",
         path: "/",
       },
@@ -303,20 +303,20 @@ export const FooterDetails = [
   },
   {
     id: "id4",
-     heading: "Support",
+    heading: "Support",
     details: [
       {
-        id:"",
+        id: "",
         handle: "Blog",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "Guides",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "Help",
         path: "/",
       },
@@ -324,20 +324,20 @@ export const FooterDetails = [
   },
   {
     id: "id5",
-     heading: "Legal",
+    heading: "Legal",
     details: [
       {
-        id:"",
+        id: "",
         handle: "Terms of Service",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "Privacy Policy",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "Capital TOS",
         path: "/",
       },
@@ -345,25 +345,25 @@ export const FooterDetails = [
   },
   {
     id: "id6",
-     heading: "Follow",
+    heading: "Follow",
     details: [
       {
-        id:"",
+        id: "",
         handle: "Twitter",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "Linkedin",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "Instagram",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "Youtube",
         path: "/",
       },
@@ -371,25 +371,25 @@ export const FooterDetails = [
   },
   {
     id: "id7",
-     heading: "Contact",
+    heading: "Contact",
     details: [
       {
-        id:"",
+        id: "",
         handle: "01-700-2000",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "sales@trybrass.com",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "help@trybrass.com",
         path: "/",
       },
       {
-        id:"",
+        id: "",
         handle: "business@trybrass.com",
         path: "/",
       },
