@@ -174,7 +174,7 @@ export const Image = styled.img<IImageProps>`
 
   @media screen and (max-width: 1024px) {
     width: ${(props) => props.mdwidth && `${props.mdwidth}`};
-    height: ${(props) => (props.mdheight && `${props.mdheight}`)};
+    height: ${(props) => props.mdheight && `${props.mdheight}`};
     margin: ${(props) => props.mdmargin && `${props.mdmargin}`};
     object-fit: ${(props) => props.mdcover && "cover"};
   }
