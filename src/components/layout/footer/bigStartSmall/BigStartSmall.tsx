@@ -4,7 +4,7 @@ import FooterCTA from "./FooterCTA";
 
 const BigStartSmall = () => {
   return (
-    <Card flex flexdirection="column" gap="70px">
+    <Card flex flexdirection="column" gap="70px" smgap="40px">
       <Card flex flexdirection="column" gap="16px" color={whiteColor}>
         <Card flex gap="12px" alignitems="flex-end">
           <Image
@@ -22,11 +22,14 @@ const BigStartSmall = () => {
         </Text>
         <FooterCTA />
       </Card>
-      <Card width="63%" mdwidth="100%" color={whiteColor}>
-        <Text size="16px" lineheight="24px">
+      <Card width="100%" mdwidth="100%" color={whiteColor}>
+        <Text size="16px" mdsize="15px" lineheight="24px">
           Banking services backed by Bancorp MFB & FCMB and regulated by the
-          Central Bank of Nigeria. Brass Technology Nigeria Limited, DBA: Brass
-          is a Brass Technologies, Inc company.
+          Central Bank of Nigeria.
+        </Text>
+        <Text size="16px" mdsize="15px" lineheight="24px">
+          Brass Technology Nigeria Limited, DBA: Brass is a Brass Technologies,
+          Inc company.
         </Text>
       </Card>
     </Card>
