@@ -248,10 +248,12 @@ export const FooterDetails = [
      heading: "Industry",
     details: [
       {
+        id:"",
         handle: "Retail Businesses",
         path: "/",
       },
       {
+        id:"",
         handle: "Internet Companies",
         path: "/",
       },
@@ -262,6 +264,7 @@ export const FooterDetails = [
      heading: "Product",
     details: [
       {
+        id:"",
         handle: "Brass Capital",
         path: "/",
       },
@@ -272,22 +275,27 @@ export const FooterDetails = [
      heading: "About",
     details: [
       {
+        id:"",
         handle: "Customers",
         path: "/",
       },
       {
+        id:"",
         handle: "Company",
         path: "/",
       },
       {
+        id:"",
         handle: "Why Brass",
         path: "/",
       },
       {
+        id:"",
         handle: "Press Resources",
         path: "/",
       },
       {
+        id:"",
         handle: "Careers",
         path: "/",
       },
@@ -298,14 +306,17 @@ export const FooterDetails = [
      heading: "Support",
     details: [
       {
+        id:"",
         handle: "Blog",
         path: "/",
       },
       {
+        id:"",
         handle: "Guides",
         path: "/",
       },
       {
+        id:"",
         handle: "Help",
         path: "/",
       },
@@ -316,14 +327,17 @@ export const FooterDetails = [
      heading: "Legal",
     details: [
       {
+        id:"",
         handle: "Terms of Service",
         path: "/",
       },
       {
+        id:"",
         handle: "Privacy Policy",
         path: "/",
       },
       {
+        id:"",
         handle: "Capital TOS",
         path: "/",
       },
@@ -334,18 +348,22 @@ export const FooterDetails = [
      heading: "Follow",
     details: [
       {
+        id:"",
         handle: "Twitter",
         path: "/",
       },
       {
+        id:"",
         handle: "Linkedin",
         path: "/",
       },
       {
+        id:"",
         handle: "Instagram",
         path: "/",
       },
       {
+        id:"",
         handle: "Youtube",
         path: "/",
       },
@@ -356,18 +374,22 @@ export const FooterDetails = [
      heading: "Contact",
     details: [
       {
+        id:"",
         handle: "01-700-2000",
         path: "/",
       },
       {
+        id:"",
         handle: "sales@trybrass.com",
         path: "/",
       },
       {
+        id:"",
         handle: "help@trybrass.com",
         path: "/",
       },
       {
+        id:"",
         handle: "business@trybrass.com",
         path: "/",
       },
