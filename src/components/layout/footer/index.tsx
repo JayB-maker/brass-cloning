@@ -4,7 +4,7 @@ import MainFooter from './mainFooter/MainFooter'
 
 const Footer = () => {
   return (
-    <MainSection padding="50px 0" mdpadding="50px 0" smpadding="30px 0" bg={primaryColor}>
+    <MainSection padding="50px 0 100px" mdpadding="50px 0 100px" smpadding="30px 0 150px" bg={primaryColor}>
       <InnerSection>
         <Card
           flex
